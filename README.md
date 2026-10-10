@@ -1,293 +1,234 @@
-::: {align="center"}
-`<img src="https://img.shields.io/badge/FORMLESS-Application%20Readiness-6C63FF?style=for-the-badge&labelColor=171923" alt="FORMLESS Application Readiness"/>`{=html}
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,fastapi,sqlite,docker,git,github&theme=light" alt="FORMLESS technology stack: Python, FastAPI, SQLite, Docker, Git and GitHub" />
 
 # FORMLESS
 
-### Turn complex requirements into clear next steps.
+### From complex requirements to application readiness.
 
-**An AI-assisted, evidence-aware application readiness platform that
-transforms lengthy policy documents into structured requirements,
-verifiable evidence, and actionable stage-based readiness.**
+**An AI-assisted, evidence-aware platform that transforms lengthy policy documents into structured requirements, verifiable evidence, and actionable next steps.**
 
-[Overview](#-overview) · [Features](#-key-features) ·
-[Architecture](#-how-it-works) · [Getting Started](#-getting-started) ·
-[Testing](#-testing)
+*Understand the rules. Organize the evidence. Know what to do next.*
 
-`<br/>`{=html}
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![Google GenAI](https://img.shields.io/badge/Google%20GenAI-4285F4?style=flat-square&logo=google&logoColor=white)](https://ai.google.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
 
-`<img src="https://img.shields.io/badge/Python-Backend-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>`{=html}
-`<img src="https://img.shields.io/badge/FastAPI-API-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>`{=html}
-`<img src="https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>`{=html}
-`<img src="https://img.shields.io/badge/Google%20GenAI-AI%20Integration-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google GenAI"/>`{=html}
-`<img src="https://img.shields.io/badge/Vite-Frontend%20Tooling-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>`{=html}
-:::
+[Overview](#-overview) • [Features](#-key-features) • [Architecture](#-how-it-works) • [Getting Started](#-getting-started) • [Testing](#-testing)
 
-------------------------------------------------------------------------
+</div>
 
-## ✨ Overview
+---
 
-Applying for an internship, scholarship, or institutional program can
-mean navigating long PDFs, scattered eligibility criteria, supporting
-documents, and joining instructions. The real challenge isn't always
-finding an opportunity---it's figuring out **what applies to you, what
-evidence you need, and what could prevent you from moving forward.**
+## 📌 Overview
 
-**FORMLESS is built to make that process clearer.**
+Applying for internships, scholarships, and institutional programs often means navigating lengthy PDFs, complicated eligibility criteria, supporting documents, and joining instructions.
 
-It transforms policy-driven application workflows into structured
-requirements, connects those requirements to applicant information and
-evidence, and highlights what remains unresolved for the applicant's
-current stage.
+The challenge isn't always finding an opportunity. It's understanding **what applies to you, what evidence you need, and what could prevent you from moving forward.**
 
-Instead of treating an application as a flat checklist, FORMLESS models
-readiness as a journey:
+**FORMLESS is designed to make that process clearer.**
+
+It transforms policy-driven application workflows into structured requirements, connects those requirements to applicant information and evidence, and identifies unresolved blockers based on the stage of the application.
+
+Instead of treating an application as a simple checklist, FORMLESS models readiness as a continuous, evidence-aware process.
 
 > **Requirement → Evidence → Verification → Action → Readiness**
 
-## 🎯 Why FORMLESS?
+## 🎯 The Problem
 
-Traditional application workflows leave applicants to interpret dense
-documents and manually track every condition. A simple checklist cannot
-always distinguish between a requirement that is complete, one that
-needs human verification, and one that blocks a later stage.
+Traditional application processes put the burden of interpretation and tracking on applicants.
 
-FORMLESS aims to answer four practical questions:
+- 📄 Important conditions are buried inside lengthy documents.
+- 🔍 Eligibility criteria can be difficult to interpret and organize.
+- 📎 Supporting evidence is scattered across files and records.
+- ⚠️ Missing or unverified information can go unnoticed.
+- 🧩 Some requirements depend on other documents or prerequisites.
+- 🧭 Applicants often lack a clear picture of what to do next.
 
--   🔎 **What do I need?** --- Understand requirements extracted from
-    policy and opportunity documents.
--   📎 **What evidence supports it?** --- Connect requirements to
-    applicant information and supporting documents.
--   🛡️ **What is verified?** --- Make uncertainty visible instead of
-    treating every extracted fact as confirmed.
--   🧭 **What should I do next?** --- Surface unresolved blockers based
-    on the stage the applicant wants to reach.
+A basic checklist can tell you what is missing. It cannot always explain what matters, what needs verification, or what is blocking your progress.
+
+## 💡 The FORMLESS Approach
+
+FORMLESS aims to turn document-heavy application processes into a structured workflow that helps applicants understand their requirements and make progress with greater clarity.
+
+| Question | How FORMLESS helps |
+|---|---|
+| What do I need? | Structures requirements from policy and opportunity documents. |
+| What evidence supports it? | Connects requirements to applicant information and supporting evidence. |
+| What is actually verified? | Distinguishes verified items from missing or unverified information. |
+| What should I do next? | Identifies blockers relevant to the current application stage. |
 
 ## 🚀 Key Features
 
-```{=html}
-<table>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 📄 Policy-to-requirements workflow
+### 📄 1. Policy-to-Requirements Workflow
 
-Turn lengthy policy or opportunity documents into structured
-requirements that are easier to review and act on.
+Transform lengthy policy documents and opportunity notices into structured requirements that are easier to understand, review, and act upon.
 
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 🔗 Evidence-aware tracking
+### 🔗 2. Evidence-Aware Tracking
 
-Connect requirements to the applicant information or evidence used to
-address them, supporting a more traceable workflow than a basic
-checklist.
+Connect requirements to applicant information and supporting evidence, creating a more traceable process than a conventional checklist.
 
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### ⚙️ Deterministic rule engine
+### ⚙️ 3. Deterministic Rule Engine
 
-Evaluate supported conditions with explicit operators and `ALL` / `ANY`
-rule grouping rather than relying on an opaque readiness score.
+Evaluate supported conditions through explicit rules rather than relying entirely on opaque AI-generated judgments.
 
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### ✅ Verification-aware statuses
+Supported operators include:
 
-Distinguish verified requirements from missing items and items that
-still need verification.
+- `EQUALS` and `NOT_EQUALS`
+- `IN` and `NOT_IN`
+- `GTE`, `LTE`, `GT`, and `LT`
+- `CONTAINS`
 
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 🧭 Stage-based readiness
+Rules can be grouped using `ALL` and `ANY` conditions.
 
-Calculate readiness against a lifecycle stage, with blockers that can
-differ between submission, completion, and joining.
+### ✅ 4. Verification-Aware Statuses
 
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 🧩 Requirement dependencies
+Not every extracted fact should automatically be considered correct or confirmed.
 
-Represent prerequisite relationships so the workflow can account for
-requirements that depend on other evidence.
+FORMLESS distinguishes between verified information, missing requirements, and items that still need verification.
 
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-</table>
-```
+### 🧭 5. Stage-Based Readiness
+
+Readiness depends on the stage an applicant is trying to reach.
+
+A requirement that blocks application submission may differ from one that blocks completion or joining. FORMLESS models these distinctions through stage-based readiness gates.
+
+### 🧩 6. Requirement Dependencies
+
+Some requirements depend on other documents or prerequisite evidence. Modeling these relationships helps explain why completing one requirement may not be sufficient to make an application ready.
+
+### 📊 7. Explainable Progress
+
+By combining requirement states, verification information, dependencies, and lifecycle stages, FORMLESS aims to make unresolved blockers easier to identify and address.
+
 ## 🧠 How It Works
 
-``` mermaid
+```mermaid
 flowchart TD
-    A["📄 Policy or opportunity document"] --> B["AI-assisted document interpretation"]
-    B --> C["Structured requirements"]
-    D["Applicant profile and evidence"] --> E["Rule engine"]
+    A["📄 Policy or Opportunity Document"] --> B["AI-Assisted Interpretation"]
+    B --> C["Structured Requirements"]
+    D["Applicant Profile and Evidence"] --> E["Deterministic Rule Engine"]
     C --> E
-    E --> F["Requirement and verification states"]
-    F --> G["Stage-based readiness calculation"]
-    G --> H["Active blockers and next actions"]
+    E --> F["Requirement and Verification States"]
+    F --> G["Stage-Based Readiness Calculation"]
+    G --> H["Active Blockers and Next Actions"]
     H --> D
 
-    classDef input fill:#eef2ff,stroke:#6c63ff,color:#171923
-    classDef process fill:#f3f4f6,stroke:#9ca3af,color:#171923
-    classDef output fill:#e6fffa,stroke:#0d9488,color:#171923
-    class A,D input
-    class B,C,E,F process
-    class G,H output
+    style A fill:#eef2ff,stroke:#6c63ff,color:#171923
+    style D fill:#eef2ff,stroke:#6c63ff,color:#171923
+    style B fill:#f3f4f6,stroke:#9ca3af,color:#171923
+    style C fill:#f3f4f6,stroke:#9ca3af,color:#171923
+    style E fill:#f3f4f6,stroke:#9ca3af,color:#171923
+    style F fill:#f3f4f6,stroke:#9ca3af,color:#171923
+    style G fill:#e6fffa,stroke:#0d9488,color:#171923
+    style H fill:#e6fffa,stroke:#0d9488,color:#171923
 ```
 
-1.  **Ingest** a policy or opportunity document.
-2.  **Structure** the relevant requirements and their context.
-3.  **Connect** requirements with applicant information and evidence.
-4.  **Evaluate** supported conditions using explicit rules.
-5.  **Verify** uncertain items instead of assuming they are satisfied.
-6.  **Calculate readiness** for the active application stage.
-7.  **Identify next actions** from the unresolved blockers.
+The workflow follows seven steps:
 
-### A key architectural principle
+1. **Ingest** — process a policy or opportunity document.
+2. **Structure** — organize relevant requirements and their context.
+3. **Connect** — associate requirements with applicant information and evidence.
+4. **Evaluate** — check supported conditions through deterministic rules.
+5. **Verify** — preserve uncertainty and identify items that require confirmation.
+6. **Calculate** — determine readiness for the active application stage.
+7. **Act** — identify remaining blockers and reassess progress as the application evolves.
 
-**AI helps interpret documents; deterministic rules evaluate supported
-conditions.**
+### A Core Design Principle
 
-Separating interpretation from evaluation makes the system easier to
-test, inspect, and explain. A readiness result should be connected to
-identifiable requirements and their current states---not presented as an
-unexplained model judgment.
+**AI for interpretation. Deterministic rules for evaluation. Human judgment where verification matters.**
 
-## 🧰 Tech Stack
+AI-assisted document interpretation and rule-based evaluation serve different purposes. Keeping them separate helps make system behavior more transparent, testable, and explainable.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------
-  Technology                                                                                                 Role
-  ---------------------------------------------------------------------------------------------------------- -----------------------------------
-  ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)        Backend application logic
+## 🧰 Technology Stack
 
-  ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)     REST API
+<div align="center">
 
-  ![SQLModel](https://img.shields.io/badge/SQLModel-Database%20Models-475569?style=flat-square)              Data models and persistence layer
+<img src="https://skillicons.dev/icons?i=python,fastapi,sqlite,docker,git,github&theme=light" alt="FORMLESS development technologies" />
 
-  ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)        Local development database
+</div>
 
-  ![Google                                                                                                   AI-assisted document interpretation
-  GenAI](https://img.shields.io/badge/Google%20GenAI-4285F4?style=flat-square&logo=google&logoColor=white)   
+| Technology | Purpose |
+|---|---|
+| Python | Backend application logic |
+| FastAPI | Backend API |
+| SQLModel | Data models and database interaction |
+| SQLite | Local development persistence |
+| Google GenAI | AI-assisted document interpretation |
+| `pypdf` | PDF text processing |
+| Vite | Frontend development tooling |
+| Pytest | Automated backend testing |
 
-  ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)              Frontend development tooling
+The exact frontend framework and dependency versions should be confirmed against the current repository configuration.
 
-  ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)        Backend testing
+## 🧪 Demonstration Scenario
 
-  `pypdf`                                                                                                    PDF text extraction
-  ----------------------------------------------------------------------------------------------------------------------------------------------
+The canonical demonstration uses an **FSSAI internship** application workflow.
 
-The exact frontend framework and dependency versions should be confirmed
-from the current frontend `package.json` and lockfile.
+It illustrates how the system can represent:
 
-## 🧪 Demo Scenario
+- Applicant profile information
+- Eligibility-related requirements
+- Requirements already marked as verified
+- Items that still need verification
+- Missing joining documents
+- Prerequisite relationships between requirements
+- Readiness blockers associated with a specific application stage
 
-The canonical demo uses an **FSSAI internship** application workflow. It
-includes an applicant profile, eligibility-related requirements, items
-requiring verification, missing joining documents, and a prerequisite
-relationship between requirements.
+The example demonstrates the distinction between having information available, having evidence verified, and being ready to proceed.
 
-The example illustrates how FORMLESS can distinguish:
+*The seeded scenario is illustrative demonstration data, not an official determination of eligibility for an FSSAI internship. Always consult the latest official notice for actual requirements.*
 
--   Requirements already marked as verified
--   Items that still need verification
--   Missing supporting documents
--   Blockers relevant to the active lifecycle stage
--   Dependencies that affect the next steps
+## 📂 Project Structure
 
-*The seeded scenario is illustrative demo data. It is not an official
-determination of FSSAI eligibility; applicants should consult the latest
-official notice.*
-
-## 🏗️ Project Structure
-
-``` text
-FORMLESS/
+```text
+formless-final-push/
 ├── backend/
 │   ├── app/
 │   │   ├── api/
-│   │   │   └── endpoints.py
 │   │   ├── services/
-│   │   │   ├── rule_engine.py
-│   │   │   ├── readiness.py
-│   │   │   └── seed.py
 │   │   ├── config.py
 │   │   ├── models.py
 │   │   └── main.py
 │   ├── tests/
-│   │   └── test_rules_and_readiness.py
 │   └── requirements.txt
 ├── frontend/
-│   └── ... application source and package configuration ...
+│   └── ... frontend application and configuration ...
+├── Dockerfile
+├── docker-compose.yml
+├── docker-compose.dev.yml
+├── README-DOCKER.md
+├── docker-build.bat
+├── docker-build.ps1
+├── .dockerignore
+├── .gitignore
 └── README.md
 ```
 
-This is an orientation to the principal backend modules, not a
-guaranteed exhaustive listing. Refer to the current repository for the
-full structure.
+This is an overview of the project structure. Refer to the actual repository for the complete directory tree and current implementation.
 
 ## 💻 Getting Started
 
 ### Prerequisites
 
--   Python 3.10+ (or the version supported by the current dependencies)
--   Node.js LTS and npm
--   Git
--   A Google GenAI API key for features that require model access
+- Python 3.10+ or the version supported by the current dependencies
+- Node.js LTS and npm
+- Git
+- Docker Desktop, if using the containerized setup
+- A Google GenAI API key for features that require model access
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
-``` bash
-git clone <your-repository-url>
-cd FORMLESS
+```bash
+git clone https://github.com/utk-ver-supm-2005/formless-final-push.git
+cd formless-final-push
 ```
 
-If the project is already on your machine, open its existing repository
-folder.
+### 2. Set Up the Backend
 
-### 2. Set up the backend
-
-``` powershell
+```powershell
 cd backend
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -295,160 +236,142 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Configure the environment variables required by the current backend
-configuration. If model-backed functionality is enabled, provide your
-Google GenAI API key using the exact variable name expected by
-`backend/app/config.py`.
+Configure the environment variables required by the current backend configuration.
 
-**Keep credentials private. Never commit API keys or a populated `.env`
-file.**
+For model-backed features, provide your Google GenAI API key using the exact environment variable expected by `backend/app/config.py`.
 
-### 3. Run the backend
+**Never commit API keys, credentials, or a populated `.env` file.**
 
-From the `backend` directory:
+### 3. Start the Backend
 
-``` powershell
+From the `backend` directory, run:
+
+```powershell
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-When running with the default local settings:
+With the default local configuration, the API should be available at:
 
--   API: `http://127.0.0.1:8000`
--   Interactive API docs: `http://127.0.0.1:8000/docs`
+- API: `http://127.0.0.1:8000`
+- Interactive API documentation: `http://127.0.0.1:8000/docs`
 
-### 4. Run the frontend
+### 4. Start the Frontend
 
 Open a second terminal at the repository root:
 
-``` powershell
+```powershell
 cd frontend
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite---commonly `http://localhost:5173`.
+Open the local URL printed by Vite, commonly `http://localhost:5173`.
 
-### 5. Verify the application
+### 5. Verify the Application
 
-1.  Confirm that both frontend and backend processes are running.
-2.  Open the frontend in your browser.
-3.  Complete the available application flow.
-4.  Inspect the browser console and Network panel if a request fails.
-5.  Check the backend logs and frontend API base-URL configuration when
-    troubleshooting connectivity.
+1. Confirm that both frontend and backend processes are running.
+2. Open the frontend in your browser.
+3. Walk through the available application workflow.
+4. Inspect the browser console and Network panel if a request fails.
+5. Check backend logs and frontend API configuration when troubleshooting connectivity.
 
-> Setup commands and URLs may change as the project evolves. Use the
-> current configuration and terminal output as the source of truth.
+> Setup commands and URLs may evolve. Follow the current repository configuration and terminal output if they differ from these instructions.
+
+## 🐳 Docker Setup
+
+The repository includes Docker-related files for containerized development and execution.
+
+- `Dockerfile` — container image configuration.
+- `docker-compose.yml` — primary Compose configuration.
+- `docker-compose.dev.yml` — development Compose configuration.
+- `README-DOCKER.md` — additional Docker instructions.
+- `docker-build.bat` and `docker-build.ps1` — Windows build scripts.
+
+For exact build and startup commands, follow [`README-DOCKER.md`](README-DOCKER.md) and the current Compose configuration.
 
 ## 🧪 Testing
 
 Run the backend test suite from the `backend` directory:
 
-``` powershell
+```powershell
 .\.venv\Scripts\python.exe -m pytest
 ```
 
-Run a focused rule-engine/readiness test module:
+If the relevant test module exists in the current checkout, run focused tests as needed:
 
-``` powershell
+```powershell
 .\.venv\Scripts\python.exe -m pytest tests/test_rules_and_readiness.py -v
 ```
 
-Retest rule evaluation, lifecycle transitions, and readiness
-calculations whenever their logic changes. Automated tests should be
-complemented by a browser walkthrough of the user-facing flow.
+Changes to rule evaluation, evidence handling, lifecycle transitions, and readiness calculations should be covered by appropriate tests.
 
-## 🔐 Configuration & Responsible Use
+Automated tests should also be complemented by browser testing of the user-facing workflow.
 
--   **Secrets:** Store API keys in local environment configuration; do
-    not commit them.
--   **Database:** Confirm the configured SQLite database path in
-    `backend/app/config.py`.
--   **Uploads:** Review the configured upload directory and how uploaded
-    files are handled.
--   **Demo data:** Understand whether a seed/reset operation overwrites
-    local state before running it.
--   **Privacy:** Before processing real applicant documents, assess
-    access control, retention, logging, and secure storage.
--   **Verification:** Extracted information may need human review.
-    `NEEDS_VERIFICATION` is not the same as verified.
--   **Official decisions:** A readiness result does not guarantee
-    eligibility, selection, or acceptance.
--   **Document safety:** Treat uploaded files and extracted text as
-    untrusted input; validate inputs and avoid leaking sensitive
-    information into logs.
+## 🔐 Security and Responsible Use
 
-## 🛣️ Future Directions
+FORMLESS is intended to support application preparation and requirement tracking. It should not be treated as a substitute for official institutional decisions.
 
-Potential development priorities include:
+- **Verify extracted information:** Policy extraction can miss exceptions, context, or important details.
+- **Preserve uncertainty:** An item marked `NEEDS_VERIFICATION` must not be treated as verified.
+- **Protect applicant data:** Assess access control, retention, logging, and secure storage before handling real documents.
+- **Keep secrets private:** Store API keys in local environment configuration.
+- **Validate uploaded files:** Treat uploaded documents and extracted text as untrusted input.
+- **Consult official sources:** Eligibility, deadlines, and document requirements can change.
+- **Understand readiness:** A readiness result reflects the state represented in the system; it does not guarantee eligibility, selection, or acceptance.
 
--   Improving extraction quality and source-level traceability
--   Strengthening evidence upload and human verification flows
--   Making blocker explanations and next actions more actionable
--   Expanding tests for lifecycle transitions and failure scenarios
--   Improving resilience for scanned, malformed, and large PDFs
--   Hardening privacy, file validation, authentication, and deployment
--   Refining accessibility, responsive behavior, and interaction
-    feedback
+## 🛣️ Future Development
 
-These are development directions, not claims that every item is already
-implemented.
+Potential development directions include:
+
+- Improving document extraction accuracy and source traceability
+- Strengthening evidence upload and verification workflows
+- Making blocker explanations and next actions more actionable
+- Expanding tests for lifecycle transitions and failure scenarios
+- Improving resilience for scanned, malformed, and large PDFs
+- Hardening privacy, file validation, authentication, and deployment
+- Refining accessibility, responsiveness, and interaction feedback
+
+These are potential development priorities, not a claim that every feature is already implemented.
 
 ## 🤝 Contributing
 
-Contributions and feedback are welcome.
+Contributions, suggestions, and feedback are welcome.
 
-1.  Create a focused branch for your change.
-2.  Keep rule evaluation and readiness behavior covered by tests.
-3.  Document any new environment variables or setup requirements.
-4.  Run relevant automated tests and manually verify the affected
-    browser flow.
-5.  Never commit credentials, real applicant documents, or other
-    sensitive data.
+1. Create a focused branch for your change.
+2. Add tests for changes to rules or readiness behavior.
+3. Document new configuration variables and setup requirements.
+4. Run relevant automated tests.
+5. Manually verify the affected browser workflow.
+6. Never commit credentials, real applicant documents, or sensitive personal information.
 
 ## 🐛 Troubleshooting
 
-  -----------------------------------------------------------------------
-  Problem                             What to check
-  ----------------------------------- -----------------------------------
-  Frontend cannot reach the API       Backend process, API base URL, CORS
-                                      settings, and browser Network
-                                      errors
-
-  Model-backed extraction fails       API key, configured model name,
-                                      provider quota, network access, and
-                                      backend logs
-
-  A requirement cannot be found       Active database/seed data and the
-                                      requirement identifier sent by the
-                                      frontend
-
-  A port is already in use            Stop the conflicting process or
-                                      configure a free port consistently
-
-  Tests fail after a schema change    Fixtures, database state, expected
-                                      statuses, and lifecycle assumptions
-  -----------------------------------------------------------------------
+| Issue | What to Check |
+|---|---|
+| Frontend cannot reach the API | Backend status, API base URL, CORS configuration, and browser Network errors |
+| Model-backed extraction fails | API key, configured model, provider quota, network access, and backend logs |
+| A requirement cannot be found | Active database, seed data, and requirement identifier sent by the frontend |
+| A port is already in use | Stop the conflicting process or configure an available port |
+| Tests fail after a schema change | Test fixtures, database state, expected statuses, and lifecycle assumptions |
 
 ## 📌 Project Status
 
-FORMLESS is an evolving prototype. Confirm feature behavior,
-configuration, and setup instructions against the current branch before
-a release or public demo.
+FORMLESS is an evolving prototype. Confirm functionality, configuration, and setup instructions against the current branch before a release or public demonstration.
 
 ## 📄 License
 
-No license is specified in this repository description. Add a `LICENSE`
-file and update this section before distributing the project if you
-intend to grant others explicit reuse rights.
+No license has been specified in this README. Add a `LICENSE` file and update this section before distributing the project if you intend to grant others explicit reuse rights.
 
-------------------------------------------------------------------------
+---
 
-::: {align="center"}
+<div align="center">
+
 ### Make requirements understandable. Make readiness actionable.
 
 **FORMLESS**
 
-`<sub>`{=html}Built to bring clarity, evidence, and direction to complex
-application workflows.`</sub>`{=html}
-:::
+*Bringing clarity, evidence, and direction to complex application workflows.*
+
+[View Repository](https://github.com/utk-ver-supm-2005/formless-final-push)
+
+</div>
