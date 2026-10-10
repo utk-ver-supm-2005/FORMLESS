@@ -1,0 +1,14 @@
+/**
+ * Ingestion and Application State Constants
+ */
+
+export const INGESTION_STATES = {
+  IDLE: 'IDLE',
+  UPLOAD_SELECTED: 'UPLOAD_SELECTED',
+  UPLOADING: 'UPLOADING',
+  PROCESSING_POLICY: 'PROCESSING_POLICY',
+  COMPLETE: 'COMPLETE',
+  ERROR: 'ERROR',
+};
+
+export const DEFAULT_STAGE_GATE = 'JOINING';

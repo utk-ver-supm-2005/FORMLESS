@@ -1,0 +1,26 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Local database & huge upload files
+uploads/*
+!uploads/.gitkeep
+
+# Environment files
+.env
+.env.local
+
+# Git & IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+*.log

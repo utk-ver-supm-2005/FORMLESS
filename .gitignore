@@ -1,0 +1,27 @@
+# Environments
+.env
+.env.local
+.venv
+env/
+venv/
+
+# Database & Uploads
+*.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store

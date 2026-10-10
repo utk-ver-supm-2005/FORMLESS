@@ -1,0 +1,11 @@
+# Node dependencies & builds
+node_modules/
+dist/
+dist-ssr/
+
+# Git & IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+*.log

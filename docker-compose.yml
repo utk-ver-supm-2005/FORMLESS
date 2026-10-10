@@ -1,0 +1,64 @@
+services:
+  # ============================================================================
+  # Backend API Service (FastAPI + SQLModel + Uvicorn)
+  # ============================================================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: formless-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-3.8-flash}
+      - DATABASE_URL=sqlite:////app/data/formless.db
+      - PROJECT_NAME=FORMLESS Compliance Engine
+      - API_V1_PREFIX=/api/v1
+    volumes:
+      - backend-data:/app/data
+      - backend-uploads:/app/uploads
+    networks:
+      - formless-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # ============================================================================
+  # Frontend Application (Vite React SPA compiled + Nginx Reverse Proxy)
+  # ============================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: formless-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - formless-net
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://localhost/"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  backend-data:
+    name: formless_backend_data
+  backend-uploads:
+    name: formless_backend_uploads
+
+networks:
+  formless-net:
+    name: formless_network
+    driver: bridge

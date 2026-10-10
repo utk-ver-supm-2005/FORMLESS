@@ -1,0 +1,22 @@
+# Root Docker ignore
+.git/
+.gitignore
+.vscode/
+.idea/
+*.log
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.venv/
+**/venv/
+**/env/
+
+# Node
+**/node_modules/
+**/dist/
+
+# Backend large directories
+backend/uploads/*
+!backend/uploads/.gitkeep
